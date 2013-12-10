@@ -3,6 +3,10 @@ function [pc, numVectors] = SVM(XTrain, YTrain, XTest, YTest, degree, C, thresho
 % This function trains a SVM on the training set. The SVM is then used to predict
 % the labels of the test set. Also, the count of the alpha that passed the
 % condition of threshold <= alpha_i <= C-threshold is returned.
+%
+% Copyright (C) 2013  GPLv3
+% by joker__ <g.chers ::at:: gmail.com>
+
 N = size(XTrain,1);
 
 % Defining the Kernel Function
